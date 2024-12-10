@@ -13,6 +13,16 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 10000  // Increase the limit to 10000 KB (10 MB)
+  },
+    build: {
+    rollupOptions: {
+      // Example: Adjust rollup configuration if necessary
+      input: 'src/main.jsx', // Ensure this is correct
+      output: {
+        dir: 'dist',
+        format: 'es', // Adjust output format as needed
+      },
+    },
   }
 });
 
